@@ -10,12 +10,12 @@
             margin: 0;
             padding: 0;
             color: #333;
-            line-height: 1.6;
             background-color: #f4f4f4;
+            line-height: 1.6;
         }
 
         .header {
-            background-color: #4CAF50;
+            background-color: #87CEEB; /* Sky Blue */
             color: white;
             padding: 1rem 0;
             text-align: center;
@@ -29,7 +29,7 @@
         .hero {
             height: 50vh;
             background-color: #DFDBE5;
-            background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%233CB371' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
             display: flex;
             align-items: center;
             justify-content: center;
@@ -42,7 +42,7 @@
             margin: 0;
         }
 
-        .about, .services, .cta {
+        .about {
             padding: 2rem;
             text-align: center;
             margin: 2rem 1rem;
@@ -51,26 +51,86 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .about {
-            background-color: #fff;
-        }
-
-        .services {
-            background-color: #fff;
-        }
-
-        .cta {
-            background-color: #fff;
-        }
-
-        .about h2, .services h2, .cta h2 {
+        .about h2 {
             margin-top: 0;
             font-size: 2rem;
             color: #4CAF50;
         }
 
-        .footer {
+        .about p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .services {
+            padding: 2rem;
+            text-align: center;
+            margin: 2rem 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .services h2 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #4CAF50;
+        }
+
+        .service-item {
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .winter {
+            background-color: #ADD8E6; /* Light Blue */
+        }
+
+        .spring {
+            background-color: #FFFACD; /* Light Yellow */
+        }
+
+        .summer {
+            background-color: #90EE90; /* Light Green */
+        }
+
+        .fall {
+            background-color: #FFDAB9; /* Light Orange */
+        }
+
+        .cta {
+            padding: 2rem;
+            text-align: center;
+            margin: 2rem 1rem;
             background-color: #333;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta h2 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #4CAF50;
+        }
+
+        .cta a {
+            color: white;
+            text-decoration: none;
+            background-color: #4CAF50;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            background-color: #5D4037; /* Dark Brown */
             color: white;
             text-align: center;
             padding: 1rem 0;
@@ -91,15 +151,31 @@
     </div>
     <div class="about">
         <h2>About Us</h2>
-        <p>We are committed to providing the best services to our customers. Our team of experts is dedicated to ensuring your satisfaction.</p>
+        <p>Welcome to our company! We believe in providing top-notch services while keeping the environment in mind. Our dedicated team is here to ensure your utmost satisfaction.</p>
     </div>
     <div class="services">
         <h2>Our Services</h2>
-        <p>We offer a wide range of services to meet your needs, including lawn care, landscaping, and more.</p>
+        <div class="service-item winter">
+            <h3>Winter Services</h3>
+            <p>We offer snow removal, ice management, and winter landscaping to keep your property safe and beautiful.</p>
+        </div>
+        <div class="service-item spring">
+            <h3>Spring Services</h3>
+            <p>Our spring services include garden preparation, flower planting, and lawn rejuvenation to give your property a fresh start.</p>
+        </div>
+        <div class="service-item summer">
+            <h3>Summer Services</h3>
+            <p>Enjoy our summer offerings such as lawn maintenance, irrigation systems, and landscape design to keep your yard lush and vibrant.</p>
+        </div>
+        <div class="service-item fall">
+            <h3>Fall Services</h3>
+            <p>Prepare for the colder months with our fall services like leaf removal, gutter cleaning, and seasonal plantings.</p>
+        </div>
     </div>
     <div class="cta">
         <h2>Contact Us</h2>
         <p>Get in touch with us to learn more about our services and how we can help you.</p>
+        <a href="#">Get in Touch</a>
     </div>
     <footer class="footer">
         <p>Copyright LawnLink Pro 2024</p>
