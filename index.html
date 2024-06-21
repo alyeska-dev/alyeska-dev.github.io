@@ -15,9 +15,9 @@
         }
 
         .header {
-            background-color: #87CEEB; /* Sky Blue */
+            background-color: #007ACC; /* Blue */
             color: white;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
             text-align: center;
         }
 
@@ -28,92 +28,56 @@
 
         .hero {
             height: 100vh;
-            background-color: #DFDBE5;
-            background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%233CB371' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-color: #4CAF50;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             flex-direction: column;
+            color: white;
         }
 
         .hero h1 {
-            color: #4CAF50;
-            font-size: 3rem;
-            margin: 0;
+            font-size: 4rem;
+            margin: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 0.5rem;
         }
 
         .about, .services, .cta {
-            padding: 2rem;
-            text-align: center;
-            margin: 2rem 1rem;
+            padding: 3rem 1rem;
+            margin: 2rem auto;
             background-color: white;
             border-radius: 8px;
+            max-width: 1000px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .about h2 {
+        .about h2, .services h2, .cta h2 {
             margin-top: 0;
-            font-size: 2rem;
-            color: #4CAF50;
+            font-size: 2.5rem;
+            color: #007ACC;
         }
 
         .about p {
-            font-style: italic;
+            font-size: 1.2rem;
             color: #555;
         }
 
-        .services {
-            padding: 2rem;
-            text-align: center;
-            margin: 2rem 1rem;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .services h2 {
-            margin-top: 0;
-            font-size: 2rem;
-            color: #4CAF50;
-        }
-
         .service-item {
-            padding: 1rem;
+            padding: 1.5rem;
             border-radius: 8px;
             margin: 1rem 0;
-        }
-
-        .winter {
-            background-color: #ADD8E6; /* Light Blue */
-        }
-
-        .spring {
-            background-color: #FFFACD; /* Light Yellow */
-        }
-
-        .summer {
-            background-color: #90EE90; /* Light Green */
-        }
-
-        .fall {
-            background-color: #FFDAB9; /* Light Orange */
+            background-color: #f4f4f4;
         }
 
         .cta {
-            padding: 2rem;
-            text-align: center;
-            margin: 2rem 1rem;
-            background-color: #333;
+            background-color: #007ACC;
             color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .cta h2 {
-            margin-top: 0;
-            font-size: 2rem;
-            color: #4CAF50;
+            text-align: center;
         }
 
         .cta a {
@@ -124,6 +88,7 @@
             border-radius: 8px;
             display: inline-block;
             transition: background-color 0.3s ease;
+            margin-top: 1rem;
         }
 
         .cta a:hover {
@@ -131,15 +96,36 @@
         }
 
         .footer {
-            background-color: #5D4037; /* Dark Brown */
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 1rem 0;
-            margin-top: 2rem;
         }
 
         .footer p {
             margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .about, .services, .cta {
+                padding: 2rem 1rem;
+            }
+
+            .about h2, .services h2, .cta h2 {
+                font-size: 2rem;
+            }
+
+            .cta a {
+                padding: 0.8rem 1.5rem;
+            }
         }
     </style>
 </head>
@@ -153,25 +139,25 @@
     </div>
     <div class="about">
         <h2>About Us</h2>
-        <p>Welcome to our company! We believe in providing top-notch services while keeping the environment in mind. Our dedicated team is here to ensure your utmost satisfaction.</p>
+        <p>We are dedicated to providing top-notch lawn care services, with a focus on sustainability and customer satisfaction. Our team of experts is committed to transforming your outdoor space into a beautiful, well-maintained oasis.</p>
     </div>
     <div class="services">
         <h2>Our Services</h2>
-        <div class="service-item winter">
+        <div class="service-item">
             <h3>Winter Services</h3>
-            <p>We offer snow removal, ice management, and winter landscaping to keep your property safe and beautiful.</p>
+            <p>Snow removal, ice management, and winter landscaping to keep your property safe and beautiful.</p>
         </div>
-        <div class="service-item spring">
+        <div class="service-item">
             <h3>Spring Services</h3>
-            <p>Our spring services include garden preparation, flower planting, and lawn rejuvenation to give your property a fresh start.</p>
+            <p>Garden preparation, flower planting, and lawn rejuvenation to give your property a fresh start.</p>
         </div>
-        <div class="service-item summer">
+        <div class="service-item">
             <h3>Summer Services</h3>
-            <p>Enjoy our summer offerings such as lawn maintenance, irrigation systems, and landscape design to keep your yard lush and vibrant.</p>
+            <p>Lawn maintenance, irrigation systems, and landscape design to keep your yard lush and vibrant.</p>
         </div>
-        <div class="service-item fall">
+        <div class="service-item">
             <h3>Fall Services</h3>
-            <p>Prepare for the colder months with our fall services like leaf removal, gutter cleaning, and seasonal plantings.</p>
+            <p>Leaf removal, gutter cleaning, and seasonal plantings to prepare your property for the colder months.</p>
         </div>
     </div>
     <div class="cta">
